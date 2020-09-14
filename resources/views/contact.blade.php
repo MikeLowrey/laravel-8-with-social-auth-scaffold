@@ -1,0 +1,96 @@
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <!-- Contact Us Section -->
+    <section class="contact-form Material-contact-section section-padding section-dark">
+        <div class="container">
+            <div class="row">
+                <!-- Section Titile -->
+                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                    <h1 class="section-title">Love to Hear From You</h1>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Section Titile -->
+                <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
+
+                <div class="find-widget">
+                Company:  <a href="https://hostriver.ro">HostRiver</a>
+                </div>
+                <div class="find-widget">
+                Address: <a href="#">4435 Berkshire Circle Knoxville</a>
+                </div>
+                <div class="find-widget">
+                    Phone:  <a href="#">+ 879-890-9767</a>
+                </div>
+                
+                <div class="find-widget">
+                    Website:  <a href="https://uny.ro">www.uny.ro</a>
+                </div>
+                <div class="find-widget">
+                    Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
+                </div>
+                </div>
+                <!-- contact form -->
+                <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                    <form action="/kontakt" class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                        @csrf
+                        <!-- Name -->
+                        <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name"
+                            @if (Auth::user())
+                            value="{{ Auth::user()->name }}"
+                            @endif
+                        >
+                        <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- email -->
+                        <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email"
+                            @if (Auth::user())
+                            value="{{ Auth::user()->email }}"
+                            @endif                        
+                        >
+                        <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Subject -->
+                        <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Message -->
+                        <div class="form-group label-floating">
+                            <label for="message" class="control-label">Message</label>
+                            <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <!-- Form Submit -->
+                        <div class="form-submit mt-5">
+                            <button class="btn btn-success" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            @if (session('msg'))
+            <div class="alert alert-success" role="alert">
+                {{ session('msg') }}
+            </div>
+            @endif
+
+
+        </div>
+    </div>
+</div>
+@endsection

@@ -1,0 +1,542 @@
+.profile-photo {
+  width: 2rem;
+  height: 2rem;
+  margin: -0.375rem 0;
+}
+
+.contact-form .section-padding {
+  padding: 45px 0;
+}
+
+.contact-form .section-dark {
+  background-color: #f9f9f9;
+  z-index: -2;
+}
+
+.contact-form .form-control,
+.contact-form .form-group .form-control {
+  border: 0;
+  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size: 0 2px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-color: rgba(0, 0, 0, 0);
+  transition: background 0s ease-out;
+  float: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.contact-form .form-control::-moz-placeholder,
+.contact-form .form-group .form-control::-moz-placeholder {
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-control:-ms-input-placeholder,
+.contact-form .form-group .form-control:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-control::-webkit-input-placeholder,
+.contact-form .form-group .form-control::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-control[disabled],
+.contact-form .form-control[readonly],
+.contact-form .form-group .form-control[disabled],
+.contact-form .form-group .form-control[readonly],
+.contact-form fieldset[disabled] .form-control,
+.contact-form fieldset[disabled] .form-group .form-control {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-form .form-control[disabled],
+.contact-form .form-group .form-control[disabled],
+.contact-form fieldset[disabled] .form-control,
+.contact-form fieldset[disabled] .form-group .form-control {
+  background-image: none;
+  border-bottom: 1px dotted #D2D2D2;
+}
+
+.contact-form .form-group {
+  position: relative;
+}
+
+.contact-form .form-group.label-floating label.control-label,
+.contact-form .form-group.label-placeholder label.control-label,
+.contact-form .form-group.label-static label.control-label {
+  position: absolute;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+.contact-form .form-group.label-floating label.control-label {
+  will-change: left, top, contents;
+}
+
+.contact-form .form-group.label-placeholder:not(.is-empty) label.control-label {
+  display: none;
+}
+
+.contact-form .form-group .help-block {
+  position: absolute;
+  display: none;
+}
+
+.contact-form .form-group.is-focused .form-control {
+  outline: 0;
+  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);
+  background-size: 100% 2px, 100% 1px;
+  box-shadow: none;
+  transition-duration: 0.3s;
+}
+
+.contact-form .form-group.is-focused .form-control .material-input:after {
+  background-color: #009688;
+}
+
+.contact-form .form-group.is-focused label,
+.contact-form .form-group.is-focused label.control-label {
+  color: #009688;
+}
+
+.contact-form .form-group.is-focused.label-placeholder label,
+.contact-form .form-group.is-focused.label-placeholder label.control-label {
+  color: #BDBDBD;
+}
+
+.contact-form .form-group.is-focused .help-block {
+  display: block;
+}
+
+.contact-form .form-group.has-warning .form-control {
+  box-shadow: none;
+}
+
+.contact-form .form-group.has-warning.is-focused .form-control {
+  background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.contact-form .form-group.has-warning .help-block,
+.contact-form .form-group.has-warning label.control-label {
+  color: #ff5722;
+}
+
+.contact-form .form-group.has-error .form-control {
+  box-shadow: none;
+}
+
+.contact-form .form-group.has-error .help-block,
+.contact-form .form-group.has-error label.control-label {
+  color: #f44336;
+}
+
+.contact-form .form-group.has-success .form-control {
+  box-shadow: none;
+}
+
+.contact-form .form-group.has-success.is-focused .form-control {
+  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.contact-form .form-group.has-success .help-block,
+.contact-form .form-group.has-success label.control-label {
+  color: #4caf50;
+}
+
+.contact-form .form-group.has-info .form-control {
+  box-shadow: none;
+}
+
+.contact-form .form-group.has-info.is-focused .form-control {
+  background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2);
+}
+
+.contact-form .form-group.has-info .help-block,
+.contact-form .form-group.has-info label.control-label {
+  color: #03a9f4;
+}
+
+.contact-form .form-group textarea {
+  resize: none;
+}
+
+.contact-form .form-group textarea ~ .form-control-highlight {
+  margin-top: -11px;
+}
+
+.contact-form .form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-form .form-group select ~ .material-input:after {
+  display: none;
+}
+
+.contact-form .form-control {
+  margin-bottom: 7px;
+}
+
+.contact-form .form-control::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-control::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .checkbox label,
+.contact-form .radio label,
+.contact-form label {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form label.control-label {
+  font-size: 12px;
+  line-height: 1.07142857;
+  font-weight: 400;
+  margin: 16px 0 0 0;
+}
+
+.contact-form .help-block {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.contact-form .form-group {
+  padding-bottom: 7px;
+  margin: 28px 0 0 0;
+}
+
+.contact-form .form-group .form-control {
+  margin-bottom: 7px;
+}
+
+.contact-form .form-group .form-control::-moz-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group .form-control:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group .form-control::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group .checkbox label,
+.contact-form .form-group .radio label,
+.contact-form .form-group label {
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group label.control-label {
+  font-size: 12px;
+  line-height: 1.07142857;
+  font-weight: 400;
+  margin: 16px 0 0 0;
+}
+
+.contact-form .form-group .help-block {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+.contact-form .form-group.label-floating label.control-label,
+.contact-form .form-group.label-placeholder label.control-label {
+  top: -7px;
+  font-size: 16px;
+  line-height: 1.42857143;
+}
+
+.contact-form .form-group.label-floating.is-focused label.control-label,
+.contact-form .form-group.label-floating:not(.is-empty) label.control-label,
+.contact-form .form-group.label-static label.control-label {
+  top: -30px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.07142857;
+}
+
+.contact-form .form-group.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+  top: -30px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.07142857;
+}
+
+.contact-form .form-group.form-group-sm {
+  padding-bottom: 3px;
+  margin: 21px 0 0 0;
+}
+
+.contact-form .form-group.form-group-sm .form-control {
+  margin-bottom: 3px;
+}
+
+.contact-form .form-group.form-group-sm .form-control::-moz-placeholder {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-sm .form-control:-ms-input-placeholder {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-sm .form-control::-webkit-input-placeholder {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-sm .checkbox label,
+.contact-form .form-group.form-group-sm .radio label,
+.contact-form .form-group.form-group-sm label {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-sm label.control-label {
+  font-size: 9px;
+  line-height: 1.125;
+  font-weight: 400;
+  margin: 16px 0 0 0;
+}
+
+.contact-form .form-group.form-group-sm .help-block {
+  margin-top: 0;
+  font-size: 9px;
+}
+
+.contact-form .form-group.form-group-sm.label-floating label.control-label,
+.contact-form .form-group.form-group-sm.label-placeholder label.control-label {
+  top: -11px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.contact-form .form-group.form-group-sm.label-floating.is-focused label.control-label,
+.contact-form .form-group.form-group-sm.label-floating:not(.is-empty) label.control-label,
+.contact-form .form-group.form-group-sm.label-static label.control-label {
+  top: -25px;
+  left: 0;
+  font-size: 9px;
+  line-height: 1.125;
+}
+
+.contact-form .form-group.form-group-sm.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+  top: -25px;
+  left: 0;
+  font-size: 9px;
+  line-height: 1.125;
+}
+
+.contact-form .form-group.form-group-lg {
+  padding-bottom: 9px;
+  margin: 30px 0 0 0;
+}
+
+.contact-form .form-group.form-group-lg .form-control {
+  margin-bottom: 9px;
+}
+
+.contact-form .form-group.form-group-lg .form-control::-moz-placeholder {
+  font-size: 18px;
+  line-height: 1.3333333;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-lg .form-control:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 1.3333333;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-lg .form-control::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 1.3333333;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-lg .checkbox label,
+.contact-form .form-group.form-group-lg .radio label,
+.contact-form .form-group.form-group-lg label {
+  font-size: 18px;
+  line-height: 1.3333333;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+
+.contact-form .form-group.form-group-lg label.control-label {
+  font-size: 14px;
+  line-height: 0.99999998;
+  font-weight: 400;
+  margin: 16px 0 0 0;
+}
+
+.contact-form .form-group.form-group-lg .help-block {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.contact-form .form-group.form-group-lg.label-floating label.control-label,
+.contact-form .form-group.form-group-lg.label-placeholder label.control-label {
+  top: -5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+.contact-form .form-group.form-group-lg.label-floating.is-focused label.control-label,
+.contact-form .form-group.form-group-lg.label-floating:not(.is-empty) label.control-label,
+.contact-form .form-group.form-group-lg.label-static label.control-label {
+  top: -32px;
+  left: 0;
+  font-size: 14px;
+  line-height: 0.99999998;
+}
+
+.contact-form .form-group.form-group-lg.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {
+  top: -32px;
+  left: 0;
+  font-size: 14px;
+  line-height: 0.99999998;
+}
+
+.contact-form select.form-control {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.contact-form .form-group.is-focused select.form-control {
+  box-shadow: none;
+  border-color: #D2D2D2;
+}
+
+.contact-form .form-group.is-focused select.form-control[multiple],
+.contact-form select.form-control[multiple] {
+  height: 85px;
+}
+
+.contact-form .input-group-btn .btn {
+  margin: 0 0 7px 0;
+}
+
+.contact-form .form-group.form-group-sm .input-group-btn .btn {
+  margin: 0 0 3px 0;
+}
+
+.contact-form .form-group.form-group-lg .input-group-btn .btn {
+  margin: 0 0 9px 0;
+}
+
+.contact-form .input-group .input-group-btn {
+  padding: 0 12px;
+}
+
+.contact-form .input-group .input-group-addon {
+  border: 0;
+  background: 0 0;
+}
+
+.contact-form .form-group input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.contact-form .contact-widget-section .single-contact-widget {
+  background: #f9f9f9;
+  padding: 20px 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.26);
+  height: 260px;
+  margin-top: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form .contact-widget-section .single-contact-widget i {
+  font-size: 75px;
+}
+
+.contact-form .contact-widget-section .single-contact-widget h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.contact-form .contact-widget-section .single-contact-widget p {
+  line-height: 16px;
+}
+
+.contact-form .contact-widget-section .single-contact-widget:hover {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.46);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form #contactForm {
+  margin-top: -10px;
+}
+
+.contact-form #contactForm .form-group label.control-label {
+  color: #8c8c8c;
+}
+
+.contact-form #contactForm .form-control {
+  font-weight: 500;
+  height: auto;
+}
+
