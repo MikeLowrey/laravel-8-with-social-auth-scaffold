@@ -1,9 +1,0 @@
-add twitter login
-martin@peoplehelper.org 
-
-change design 
-#show avatar
-#add impressum, kontakt datenschutz
-#make an contact form
-push it to github
-
